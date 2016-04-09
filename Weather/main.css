@@ -1,0 +1,21 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #112222;
+}
+
+.toggled {
+    background-color: #000; 
+}
+
+#title {
+    text-align: center;
+    color: #AADDDD;
+}
+
+#temp {
+    text-align: center;
+    color: #BBBBCC;
+    padding: 50px;
+    font-size: 32px;
+}
