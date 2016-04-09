@@ -2,20 +2,33 @@ body {
     height: 100%;
     width: 100%;
     background-color: #080C14;
+    text-align: center;
+    font-size: 32px;
+    color: #BBBBCC;
 }
 
 .toggled {
     background-color: #000;
 }
 
-#title {
-    text-align: center;
+#title h1{
+    font-size: 64px;
     color: #AADDDD;
+    padding-bottom: 50px;
 }
 
 #temp {
-    text-align: center;
-    color: #BBBBCC;
-    padding: 50px;
-    font-size: 32px;
-} 
+    
+}
+
+#location {
+
+}
+
+#conditions {
+
+}
+
+#weatherIcon {
+
+}
