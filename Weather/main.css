@@ -5,6 +5,7 @@ body {
     text-align: center;
     font-size: 32px;
     color: #BBBBCC;
+    visibility: hidden;
 }
 
 .clickable {
@@ -35,9 +36,5 @@ body {
 }
 
 #weatherIcon {
-
-}
-
-#json {
-
+    font-size: 2em;
 }
