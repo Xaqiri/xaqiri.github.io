@@ -26,10 +26,10 @@ var getIcon = function(id) {
 var tempConversion = function(temp) {
     var newTemp = 0;
     if ($("#tempMode").text()==="F") {
-        newTemp = (temp-32)*5/9;
+        newTemp = Math.round((temp-32)*5/9);
         $("#tempMode").html("C");
     } else {
-        newTemp = (temp*9/5)+32;
+        newTemp = Math.round((temp*9/5)+32);
         $("#tempMode").html("F");
     }
     return newTemp;
