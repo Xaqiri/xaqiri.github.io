@@ -24,7 +24,15 @@ var getIcon = function(id) {
 };
 
 var tempConversion = function(temp) {
-
+    var newTemp = 0;
+    if ($("#tempMode").text()==="F") {
+        newTemp = (temp-32)*5/9;
+        $("#tempMode").html("C");
+    } else {
+        newTemp = (temp*9/5)+32;
+        $("#tempMode").html("F");
+    }
+    return newTemp;
 };
 
 $(document).ready(function() {
@@ -44,12 +52,16 @@ $(document).ready(function() {
                 temp = Math.round(a.list[0].main.temp);
                 conditions = a.list[0].weather[0].main;
                 $("#location").html(cityName + ", " + country);
-                $("#tempNum").html(temp + " ");
                 $("#conditions").html(conditions);
+                $("#tempNum").html(temp + " ");
                 conID = getConditionID(a);
                 conditionIcon = getIcon(conID);
                 $("#weatherIcon").html('<i class="' + "wi " + conditionIcon + '"></i>');
                 $("body").css("visibility", "visible");
+                $("#tempMode").on("click", function() {
+                    temp = tempConversion(temp);
+                    $("#tempNum").html(temp + " ");
+                });
                 mo("#tempMode");
                 });
             });
