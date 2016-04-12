@@ -2,7 +2,7 @@
 var dayColors = ["#e3cd3c", "#6b0000", "#a23e3e"];
 var nightColors = ["#080C14", "#AADDDD", "#BBBBCC"];
 var d = new Date();
-var h = 19; //d.getHours();
+var h = d.getHours();
 var timeOfDay = "";
 
 var mo = function(id) {
