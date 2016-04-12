@@ -1,5 +1,5 @@
-// Colors: [bgColor, titleColor, textColor]
-var dayColors = ["#e3cd3c", "#6b0000", "#a23e3e"];
+// Colors: [bgColor, titleColor, textColor, footerColor]
+var dayColors = ["#f4f261", "#6b0000", "#402800", "#ff7a00"];
 var nightColors = ["#080C14", "#AADDDD", "#BBBBCC"];
 var d = new Date();
 var h = d.getHours();
@@ -54,6 +54,7 @@ var getTime = function() {
         $("body").css("background-color", dayColors[0]);
         $("#title").css("color", dayColors[1]);
         $("body").css("color", dayColors[2]);
+        $("footer a").css("color", dayColors[3]);
         timeOfDay = "day";
     }
     return timeOfDay;
