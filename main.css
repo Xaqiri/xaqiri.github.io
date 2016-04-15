@@ -5,7 +5,7 @@ html, body {
     margin: auto;
     background-color: #000;
     text-align: center;
-    font-size: 32px;
+    font-size: 16px;
 }
 
 nav {
@@ -42,16 +42,16 @@ nav {
 
 #about {
 	height: 100%;
-	background-color: #CCAAFF;
+    background-color: #CCAAFF;
 }
 
 #portfolio {
-	height: 100%;
+	height: auto;
 	background-color: #BBCCFF;
 }
 
 #contact {
-	height: 100%;
+	height: auto;
 	background-color: #AACCBB;
-    padding-top: 100px; 
+    padding-top: 100px;
 }
