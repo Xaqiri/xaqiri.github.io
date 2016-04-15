@@ -1,30 +1,88 @@
 <html>
 <head>
     <meta charset="UTF-8"></meta>
-    <title>Weather</title>
+    <title>Zachary Robbins</title>
     <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
 	<script src="main.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css"></link>
     <link rel="stylesheet" href="css/weather-icons.css"></link>
 
 </head>
 <body>
-    <div class="container-fluid">
-        <div id="title"><h1>Super Weather Displayer</h1></div>
-        <div id="location"></div>
-        <div id="temp">
-            <span id="tempNum"></span>
-            <i class="wi wi-degrees"></i>
-            <span class="clickable" id="tempMode">F</span>
-        </div>
-        <div id="conditions"></div>
-        <div id="weatherIcon"></div>
-        <footer>
-            <h5 style="padding: 50px">
-                Created by <a href="https://www.freecodecamp.com/xaqiri" target="_blank">Zachary Robbins</a> using <a href="https://erikflowers.github.io/weather-icons/" target="_blank">Weather Icons</a> and the <a href="http://openweathermap.org/" target="_blank">OpenWeatherMap API</a>.
-            </h5>
-        </footer> 
-    </div>
+<div class="container-fluid">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button">
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Zachary Robbins</a>
+			</div>
+			<div class="collapse navbar-collapse">
+			<div class="navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</nav>
+	<div class="sect" id="home">
+		<h1>Zachary Robbins' Portfolio</h1>
+	</div>
+	<div class="sect" id="about">
+		<h1>This is the about page</h1>
+		<p>
+			My name's Zachary Robbins.  I'm a 24yo from Florida looking to start a career in software development.  I'm currently working through the Free Code Camp curriculum.
+		</p>
+		<ul style="float: left"> Current skills:
+			<li>HTML and CSS + Bootstrap</li>
+			<li>Javascript + jQuery</li>
+			<li>Python</li>
+		</ul>
+	</div>
+	<div class="sect" id="portfolio">
+		<h1>Here's a bit of my work</h1>
+		<div class="row">
+			<div class="col-sm-4 portfolioItem">
+				<a href="http://codepen.io/Xaqiri/full/ONMoMK/" target="_blank">
+				<img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Tribute Page"/>
+				</a>
+			</div>
+			<div class="col-sm-4 portfolioItem">
+				<a href="http://codepen.io/Xaqiri/full/ONgeWr/" target="_blank">
+				<img src="https://s3.amazonaws.com/xaqiri/rqg.png" alt="Random Quote Generator"/>
+				</a>
+			</div>
+			<div class="col-sm-4 portfolioItem">
+				<a href="http://codepen.io/Xaqiri/pen/jqZMao" target="_blank">
+				<img src="http://placehold.it/350x150" alt="Weather"/>
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 portfolioItem">
+				<img src="http://placehold.it/350x150" alt="Twitch.tv API Project"/>
+			</div>
+			<div class="col-sm-4 portfolioItem">
+				<img src="http://placehold.it/350x150" alt="Weather App"/>
+			</div>
+			<div class="col-sm-4 portfolioItem">
+				<img src="http://placehold.it/350x150" alt="Wikipedia Search Engine"/>
+			</div>
+		</div>
+	</div>
+	<div class="sect" id="contact">
+		<h1>No social media yet, but here's my Free Code Camp profile</h1>
+		<a class="btn btn-primary btn-lg" href="https://www.freecodecamp.com/xaqiri" target="_blank">
+			<i class="fa fa-fire"></i>
+		</a>
+	</div>
+</div>
 </body>
 </html>

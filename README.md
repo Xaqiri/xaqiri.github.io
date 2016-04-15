@@ -1,4 +1,4 @@
-# FreeCodeCamp
-Repo for FreeCodeCamp projects
+# Portfolio
+Repo for portfolio
 
-Contains all the projects I finish while going through the FreeCodeCamp curriculum.  
+My portfolio site, containing links to my work and social media. 
