@@ -45,12 +45,13 @@ nav {
 }
 
 #about {
-	text-align: left;
+    height: auto; 
+    text-align: left;
     background-color: #CCAAFF;
 }
 
 #about ul {
-    padding-bottom: auto; 
+    padding-bottom: auto;
     margin-bottom: auto;
 }
 
