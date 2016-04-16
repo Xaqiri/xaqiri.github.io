@@ -27,9 +27,13 @@ nav {
 .portfolioItem {
 	height: auto;
 	text-align: center;
-	padding: 5px;
+    background-color: #99a9d7;
+    padding: 5px;
+    margin-bottom: 5px;
 	border: 1px outset rgba(255, 255, 255, .6);
 }
+
+#navItems {}
 
 #home {
 	height: 100%;
@@ -46,7 +50,7 @@ nav {
 }
 
 #about * {
-    bottom: 10em; 
+    bottom: 10em;
 }
 
 #portfolio {
@@ -57,4 +61,9 @@ nav {
 #contact {
 	height: auto;
 	background-color: #AACCBB;
+}
+
+#contact a {
+    border-radius: 10px 20px;
+    margin-top: 10px; 
 }
