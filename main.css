@@ -34,18 +34,19 @@ nav {
 #home {
 	height: 100%;
 	color: #AAAAFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url("https://s3.amazonaws.com/xaqiri/desert-lightning-1408110525Yi1.jpg");
 }
 
-#home h1 {
-    position: relative;
-    top: 50%;
+#about {
+	text-align: left;
+    background-color: #CCAAFF;
 }
 
-#about {
-	height: 100%;
-    text-align: left;
-    background-color: #CCAAFF;
+#about * {
+    bottom: 10em; 
 }
 
 #portfolio {
@@ -56,5 +57,4 @@ nav {
 #contact {
 	height: auto;
 	background-color: #AACCBB;
-    padding-top: 100px;
 }
