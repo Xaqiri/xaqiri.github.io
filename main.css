@@ -22,7 +22,6 @@ nav {
 	background-position: top left;
 	text-align: center;
 	padding: 50px;
-	margin-bottom: -20px;
 }
 
 .portfolioItem {
@@ -34,14 +33,18 @@ nav {
 
 #home {
 	height: 100%;
-	width: 100%;
 	color: #AAAAFF;
-	background-image: url("https://s3.amazonaws.com/xaqiri/desert-lightning-1408110525Yi1.jpg");
-	background-repeat: no-repeat;
+    background-image: url("https://s3.amazonaws.com/xaqiri/desert-lightning-1408110525Yi1.jpg");
+}
+
+#home h1 {
+    position: relative;
+    top: 50%;
 }
 
 #about {
 	height: 100%;
+    text-align: left;
     background-color: #CCAAFF;
 }
 
