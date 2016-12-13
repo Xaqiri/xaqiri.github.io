@@ -1,17 +1,20 @@
+$bg-color: #004; 
+$fg-color: #DDD; 
+
 html, body {
     height: 100%;
     width: 100%;
     padding: auto;
     margin: auto;
-    background-color: #000;
+    background-color: $bg-color;
+    color: $fg-color;
     text-align: center;
-    font-size: 16px;
 }
 
 nav {
     font-size: 16px;
-    color: #FFFFFF;
-	background-color: #000000;
+    color: $fg-color;
+	background-color: $bg-color;
 }
 
 .sect {
@@ -20,22 +23,23 @@ nav {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: top left;
+    border: 1px solid lighten($bg-color, 20%);
 	text-align: center;
-	padding: 50px;
+	padding: 2%;
+    margin-top: 1%;
 }
 
 .portfolioItem {
-	height: 20rem;
+    //height: 30%;
     text-align: center;
-    background-color: #99a9d7;
-    padding: 5px;
-    margin-bottom: 5px;
-	border: 1px outset rgba(255, 255, 255, .6);
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid lighten($bg-color, 60%);
 }
 
 .portfolioItem img {
     width: 100%;
-    height: 100%;
+    height: 30%;
 }
 
 #navItems {}
@@ -52,7 +56,6 @@ nav {
 #about {
     height: auto;
     text-align: left;
-    background-color: #CCAAFF;
 }
 
 #about ul {
@@ -62,12 +65,10 @@ nav {
 
 #portfolio {
 	height: auto;
-	background-color: #BBCCFF;
 }
 
 #contact {
 	height: auto;
-	background-color: #AACCBB;
 }
 
 #contact a {
