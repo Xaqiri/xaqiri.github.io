@@ -1,0 +1,4 @@
+Change projects section to appear more like windows live-tiles 
+Some tiles update periodically (weather app etc.), others are static (calculator etc.) 
+Mousing over a tile expands it to show a description underneath it (e.g. mousing over the weather app displays 'weather app' underneath it) 
+Arcade app will probably work like a folder; mousing over it will expand it to show the individual games' tiles 
