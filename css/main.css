@@ -24,7 +24,8 @@ nav {
 
 .portfolioItem {
   text-align: center;
-  background: #00005e;
+  background: #004;
+  border: none;
   border: 1px solid #7777ff; }
 
 .portfolioItem img {
@@ -36,7 +37,7 @@ nav {
   padding-bottom: 25%;
   color: #DDD;
   align-items: center;
-  background-image: url("https://s3.amazonaws.com/xaqiri/desert-lightning-1408110525Yi1.jpg"); }
+  background-image: url("https://images.unsplash.com/photo-1429552077091-836152271555?dpr=1&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=1158&amp;q=80&amp;cs=tinysrgb&amp;crop="); }
 
 #about {
   height: auto;

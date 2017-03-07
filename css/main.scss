@@ -30,7 +30,8 @@ nav {
 
 .portfolioItem {
     text-align: center;
-    background: lighten($bg-color, 5%);
+    background: $bg-color;
+    border: none;
     border: 1px solid lighten($bg-color, 60%);
     //margin: 10px;
 }
@@ -47,7 +48,8 @@ nav {
   padding-bottom: 25%;
   color: $fg-color;
   align-items: center;
-  background-image: url("https://s3.amazonaws.com/xaqiri/desert-lightning-1408110525Yi1.jpg");
+  background-image: url("https://images.unsplash.com/photo-1429552077091-836152271555?dpr=1&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=1158&amp;q=80&amp;cs=tinysrgb&amp;crop=");
+  //background-image: url("https://s3.amazonaws.com/xaqiri/desert-lightning-1408110525Yi1.jpg");
 }
 
 #about {
