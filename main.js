@@ -1,4 +1,6 @@
-$(document).ready(function() {
-	$("ul").css("text-align", "left");
-	$("img").addClass("img-rounded img-responsive");
-}); 
+let nav__items_expand = document.querySelector('.nav__items-expand')
+let nav__items = document.querySelector('.nav__items')
+
+nav__items_expand.addEventListener('click', () => {
+  nav__items.classList.toggle('nav__items-expanded')
+})
