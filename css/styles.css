@@ -2,7 +2,8 @@ html, body {
   height: 100%;
   width: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background: #004; }
 
 .nav {
   font-size: 1.5rem;
@@ -75,5 +76,21 @@ html, body {
         background: #004; }
         .nav__items__item:hover a {
           color: #DDD; }
+
+.container {
+  margin-top: 5.25rem;
+  display: flex;
+  flex-direction: column; }
+
+.section {
+  margin: 0.25rem 1%;
+  height: 100%;
+  background: #00004e;
+  color: #DDD;
+  border: 1px solid #1111ff;
+  border-radius: 1rem;
+  padding: 2rem; }
+  .section h1 {
+    text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
