@@ -9,8 +9,8 @@ html, body {
   font-size: 1.5rem;
   color: #004;
   background-color: #DDD;
-  opacity: .6;
-  height: 5rem;
+  opacity: .8;
+  height: auto;
   width: 100%;
   line-height: 5rem;
   position: fixed;
@@ -27,15 +27,17 @@ html, body {
   .nav__brand {
     width: 75%;
     text-align: left;
-    padding-left: 1%; }
+    box-sizing: border-box;
+    padding-left: 2%;
+    font-weight: 800; }
     @media screen and (min-width: 800px) {
       .nav__brand {
-        width: 50%; } }
+        width: 60%; } }
   .nav__items-expand {
     padding: 1.25rem 0;
     box-sizing: border-box;
-    width: 20%;
-    height: 100%;
+    width: 5rem;
+    height: 5rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -47,24 +49,25 @@ html, body {
         display: none; } }
     .nav__items-expand__bar {
       display: flex;
-      width: 90%;
+      width: 75%;
       margin: auto;
-      height: 4px;
-      border: 2px solid #DDD;
+      height: 6px;
       background: #DDD; }
   .nav__items {
     display: none;
-    width: 40%; }
+    width: 40%;
+    justify-content: space-around; }
     @media screen and (min-width: 800px) {
       .nav__items {
-        display: flex;
-        padding: 0 1%; } }
+        display: flex; } }
     .nav__items-expanded {
       display: flex;
-      background: #DDD;
       height: 100%;
       width: 100%;
       border-bottom: 1px solid #0000aa; }
+      @media screen and (min-width: 800px) {
+        .nav__items-expanded {
+          width: 40%; } }
     .nav__items__item {
       width: 25%;
       height: 5rem;
