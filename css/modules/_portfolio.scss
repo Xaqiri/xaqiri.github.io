@@ -1,0 +1,39 @@
+.portfolio {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  &__item {
+    display: flex;
+    flex: 0 1 100%;
+    flex-flow: wrap;
+    flex-direction: column;
+    line-height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.5rem;
+    &-img {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      height: 25rem;
+      text-decoration: none;
+    }
+    &-text {
+      border-radius: 0 0 1rem 1rem;
+      background-color: $fg-color;
+      color: $bg-color;
+      margin-bottom: 10px;
+    }
+    @media #{$atMedium} {
+      flex: 0 1 49%;
+    }
+    @media #{$atLarge} {
+      flex: 0 1 33%;
+    }
+  }
+}
