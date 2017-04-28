@@ -71,14 +71,12 @@ html, body {
     .nav__items__item {
       width: 25%;
       height: 5rem;
-      text-align: center; }
-      .nav__items__item a {
-        color: #004;
-        text-decoration: none; }
+      text-align: center;
+      color: #004;
+      text-decoration: none; }
       .nav__items__item:hover {
-        background: #004; }
-        .nav__items__item:hover a {
-          color: #DDD; }
+        background: #004;
+        color: #DDD; }
 
 .container {
   margin-top: 5.25rem;

@@ -65,15 +65,11 @@
       width: 25%;
       height: 5rem;
       text-align: center;
-      a {
-        color: $bg-color;
-        text-decoration: none;
-      }
+      color: $bg-color;
+      text-decoration: none;
       &:hover {
         background: $bg-color;
-        a {
-          color: $fg-color;
-        }
+        color: $fg-color;
       }
     }
   }
