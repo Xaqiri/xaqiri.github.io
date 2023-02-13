@@ -58,11 +58,11 @@ export default function Home() {
               Data Analytics with Python, SQL, Excel, and Tableau
             </p>
           </div>
+          <div>
+            <h3 className="text-3xl pt-2 mb-5 mt-10">Portfolio</h3>
+          </div>
           <div className="lg:flex gap-10">
-            <div>
-              <h3 className="text-3xl pt-2 mb-5 mt-10">Portfolio</h3>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl mb-10 text-gray-800 dark:bg-gray-200">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 text-gray-800 dark:bg-gray-200">
               {/* <Image src={} width={100} height={100}/> */}
               <h3 className="text-lg font-medium pt-8 pb-2">Flashcards</h3>
               <p className="py-2">
