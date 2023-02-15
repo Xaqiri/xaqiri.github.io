@@ -1,4 +1,4 @@
 # Portfolio
 Repo for portfolio
 
-Old portfolio site
+My portfolio site, containing links to my work and social media. 
