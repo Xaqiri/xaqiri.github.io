@@ -1,19 +1,21 @@
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
-
+import { Icon } from '@iconify/vue';
 </script>
 
 <template>
   <p>
-    Pursuing a Bachelor of Science in Software Engineering from Southern New Hampshire University. Interested in web
-    development, data engineering, and computational linguistics.
+    Pursuing a Bachelor of Science in Software Engineering from Southern New
+    Hampshire University. Interested in web development, data engineering, and
+    computational linguistics.
   </p>
-  <a href='https://github.com/Xaqiri'>
-    <Icon icon="mdi:github"/>
-  </a>
-  <a href='https://www.linkedin.com/in/zacharyrobbins-dev/'>
-    <Icon icon="mdi:linkedin"/>
-  </a>
+  <div id="icon-holder">
+    <a href="https://github.com/Xaqiri">
+      <Icon icon="mdi:github" />
+    </a>
+    <a href="https://www.linkedin.com/in/zacharyrobbins-dev/">
+      <Icon icon="mdi:linkedin" />
+    </a>
+  </div>
 </template>
 
 <style scoped>
@@ -24,4 +26,8 @@ svg {
   color: hsla(200, 100%, 80%, 1);
 }
 
+#icon-holder {
+  display: flex;
+  justify-content: center;
+}
 </style>

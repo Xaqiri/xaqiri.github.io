@@ -1,16 +1,27 @@
 <script setup lang="ts">
+import { ref, type Ref } from 'vue';
+import NavBar from '@/components/NavBar.vue';
+import AboutPage from '@/components/AboutPage.vue';
+import ProjectPage from '@/components/ProjectPage.vue';
+import EducationPage from '@/components/EducationPage.vue';
 
-import NavBar from "@/components/NavBar.vue";
-import AboutPage from "@/components/AboutPage.vue";
-import ProjectPage from "@/components/ProjectPage.vue";
-import EducationPage from "@/components/EducationPage.vue";
-
+let shown: Ref<boolean> = ref(true);
+const transition = (event: any) => {
+  shown = !shown;
+  if (event.target.classList.value === 'shown') {
+    event.target.classList.value = 'hidden';
+  } else {
+    event.target.classList.value = 'shown';
+  }
+  console.log(event.target);
+  console.log(event.target.classList.value);
+};
 </script>
 
 <template>
   <NavBar />
   <header>
-    <img src="./assets/profile_pic.jpeg" alt="headshot">
+    <img src="./assets/profile_pic.jpeg" alt="headshot" />
     <p>Web Developer</p>
   </header>
   <main>
@@ -20,13 +31,14 @@ import EducationPage from "@/components/EducationPage.vue";
     <div id="projects">
       <ProjectPage />
     </div>
-    <div id="education">Here is my education section</div>
+    <div id="education">
+      <EducationPage />
+    </div>
   </main>
 </template>
 
 <style scoped>
 nav {
-  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -65,7 +77,7 @@ img {
 main {
   color: hsla(200, 100%, 80%, 1);
   font-size: 16pt;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,9 +85,11 @@ main {
 }
 
 main div {
-  width: 50%;
+  /*  width: 50%;*/
   margin: 2em;
+  height: 100vh;
 }
+
 a {
   cursor: pointer;
 }

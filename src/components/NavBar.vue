@@ -1,9 +1,29 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const hackAnimation = (event) => {
+    let iterations = 0;
+    const interval = setInterval(() => {
+        event.target.innerText = event.target.innerText.split("")
+            .map((letter, index) => {
+                if (index < iterations) {
+                    return event.target.dataset.value[index]
+                }
+                return letters[Math.floor(Math.random() * 26)]
+            })
+            .join("");
+
+
+        if (iterations >= event.target.dataset.value.length) clearInterval(interval)
+        iterations += 1 / 3;
+    }, 30);
+}
+
+</script>
 
 <template>
   <nav id="nav-bar">
     <div class="shaded">
-      <a to="/">Zachary Robbins</a>
+      <a to="/" @click="hackAnimation" data-value="Zachary Robbins">Zachary Robbins</a>
     </div>
     <div id="nav-links">
       <a href="#about">About</a>
