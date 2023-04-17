@@ -34,7 +34,7 @@ export default function Home() {
               <li>
                 <a
                   className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
-                  href='https://shorturl.at/fjwyz'
+                  href='https://docs.google.com/document/d/1Blid5PTe_fKZbcqG8qZ8rA_eA7uoR5PGcPBaJ4YSnzo/edit?usp=sharing'
                 >
                   Resume
                 </a>
